@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6762945896472815145
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.077
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788790585888288887, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406951729518006099, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_Name
+      value: Car AI PF Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406951729518006099, guid: ba8955de9ab8abe4299ad2e4ae5c3024,
+        type: 3}
+      propertyPath: m_TagString
+      value: CarAI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba8955de9ab8abe4299ad2e4ae5c3024, type: 3}
