@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,7 +36,7 @@ public class CarHandler : MonoBehaviour
     float carMaxSpeedPercentage = 0;
 
     //Multipliers
-    float accelerationMultiplier = 3;
+    float accelerationMultiplier = 2;
     float breaksMultiplier = 15;
     float steeringMultiplier = 5;
 

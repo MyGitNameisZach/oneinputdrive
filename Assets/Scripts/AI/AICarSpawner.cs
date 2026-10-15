@@ -13,7 +13,7 @@ public class AICarSpawner : MonoBehaviour
 
     //Timing
     float timeLastCarSpawned = 0;
-    WaitForSeconds wait = new WaitForSeconds(0.5f);
+    WaitForSeconds wait = new WaitForSeconds(0.2f);
 
     //Overlapped check
     [SerializeField]
@@ -56,7 +56,7 @@ public class AICarSpawner : MonoBehaviour
 
     void SpawnNewCars()
     {
-        if (Time.time - timeLastCarSpawned < 2)
+        if (Time.time - timeLastCarSpawned < 1.5)
             return;
 
         GameObject carToSpawn = null;
@@ -76,9 +76,9 @@ public class AICarSpawner : MonoBehaviour
         if (carToSpawn == null)
             return;
 
-        Vector3 spawnPosition = new Vector3(0, 0, playerCarTransform.transform.position.z + 100);
+        Vector3 spawnPosition = new Vector3(0, 0, playerCarTransform.transform.position.z + 50);
 
-        if(Physics.OverlapBoxNonAlloc(spawnPosition, Vector3.one *2, overlappedCheckCollider, Quaternion.identity, otherCarsLayerMask) > 0)
+        if (Physics.OverlapBoxNonAlloc(spawnPosition, Vector3.one * 2, overlappedCheckCollider, Quaternion.identity, otherCarsLayerMask) > 0)
             return;
 
         carToSpawn.transform.position = spawnPosition;
