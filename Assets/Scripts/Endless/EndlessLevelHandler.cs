@@ -13,9 +13,9 @@ public class EndlessLevelHandler : MonoBehaviour
 
     Transform playerCarTransform;
 
-    WaitForSeconds waitFor100ms = new WaitForSeconds(0.1f);
+    WaitForSeconds waitFor100ms = new WaitForSeconds(0.2f);
 
-    const float sectionLength = 26;
+    const float sectionLength = 15;
 
     // Start is called before the first frame update
     void Start()
@@ -69,12 +69,13 @@ public class EndlessLevelHandler : MonoBehaviour
         for (int i = 0; i < sections.Length; i++)
         {
             //Check if section is too far behind.
-            if (sections[i].transform.position.z - playerCarTransform.position.z < -sectionLength)
+            if (sections[i].transform.position.z - playerCarTransform.position.z  < -sectionLength)
             {
+
                 //Store the position of the section and disable it
                 Vector3 lastSectionPosition = sections[i].transform.position;
                 sections[i].SetActive(false);
-
+                
                 //Get new section & enable it & move it forward
                 sections[i] = GetRandomSectionFromPool();
 
@@ -93,7 +94,7 @@ public class EndlessLevelHandler : MonoBehaviour
 
         bool isNewSectionFound = false;
 
-        while(!isNewSectionFound)
+        while (!isNewSectionFound)
         {
             //Check if the section is not active, in that case we've found a section
             if (!sectionsPool[randomIndex].activeInHierarchy)
