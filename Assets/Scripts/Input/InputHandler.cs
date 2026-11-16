@@ -39,6 +39,10 @@ public class InputHandler : MonoBehaviour
 
     void Update()
     {
+        //Ignore input on the start screen, and on the frame the run starts so the start press doesn't change lane
+        if (!GameState.IsPlaying || Time.frameCount <= GameState.StartedFrame)
+            return;
+
         //Key pressed, start timing it
         if (Input.GetKeyDown(actionKey))
         {
